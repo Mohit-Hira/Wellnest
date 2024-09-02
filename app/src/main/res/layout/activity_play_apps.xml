@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/bgColor"
+    android:orientation="vertical"
+    tools:context=".activities.PlayApps">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:background="@drawable/background"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/history_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="30dp"
+                    android:background="@color/transparent"
+                    android:foreground="@drawable/history"
+                    android:foregroundTint="@color/white" />
+
+                <TextView
+                    android:id="@+id/schedule"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:text="Schedule"
+                    android:textAlignment="viewStart"
+                    android:textColor="#1E2E21"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/logout_btn"
+                    android:layout_width="24dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:foreground="@drawable/logout"
+                    android:foregroundTint="@color/white" />
+
+                <TextView
+                    android:id="@+id/apps"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="20dp"
+                    android:text="Games"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/token_layout"
+                android:layout_width="400dp"
+                android:layout_height="320dp"
+                android:layout_gravity="center_horizontal"
+
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/cupon_box"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="147dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Total Time Spent"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/total_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_vertical"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/listview_custom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewredeem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="Apps"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+                <ListView
+                    android:id="@+id/gamesListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:divider="@android:color/transparent"
+                    android:padding="20dp"
+                    android:scrollbarSize="0dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

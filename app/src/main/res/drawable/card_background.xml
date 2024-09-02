@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background Image -->
+    <item>
+        <bitmap
+            android:src="@drawable/transparent_notification_logo"
+            android:tileMode="disabled"
+            android:gravity="center"/>
+    </item>
+
+    <!-- Shape Overlay -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#D9D8ECB5"/> <!-- Beige background color -->
+            <corners android:radius="24dp"/> <!-- Rounded corners -->
+            <stroke android:width="5dp" android:color="#36614B"/> <!-- Green border -->
+        </shape>
+    </item>
+</layer-list>
